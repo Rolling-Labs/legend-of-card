@@ -171,6 +171,23 @@ const HowItWorksPage = () => {
             refunded amount, after deducting the necessary admin fees charged by
             the external service provider, will be airdropped to the NFT
             holder’s wallet.
+            <br></br>
+            <br></br>
+            Please note that a portion of the Gross Winnings, specifically 30%,
+            could be withheld as tax from certain players. The tax refund will
+            possibly take 6-12 months.
+            <br></br>
+            <br></br>
+            If that happens, we will first distribute the pre-tax winnings to
+            the NFT holder. When the tax refund is complete, we will airdrop the
+            rest of the returns into the NFT holder’s wallet.
+            <br></br>
+            <br></br>
+            The NFT will continue to be tradeable in perpetuity, with more
+            utility to come!
+            <br></br>
+            <br></br>
+            (There is a small admin fee charged by external service provider).
           </p>
         </div>
       </div>
