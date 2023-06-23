@@ -161,19 +161,6 @@ const HowItWorksPage = () => {
             <br></br>
             <br></br>
             *Please note that a portion of the Gross Winnings, specifically 30%,
-            could be withheld by the US government from certain players. The
-            players will file a tax refund application which normally takes 6-12
-            months.
-            <br></br>
-            <br></br>
-            In case that happens, we will first distribute the pre-tax winnings
-            to the staker. Once the tax refund process is completed, the
-            refunded amount, after deducting the necessary admin fees charged by
-            the external service provider, will be airdropped to the NFT
-            holder’s wallet.
-            <br></br>
-            <br></br>
-            Please note that a portion of the Gross Winnings, specifically 30%,
             could be withheld as tax from certain players. The tax refund will
             possibly take 6-12 months.
             <br></br>
@@ -187,7 +174,7 @@ const HowItWorksPage = () => {
             utility to come!
             <br></br>
             <br></br>
-            (There is a small admin fee charged by external service provider).
+            (There is a small admin fee charged by external service provider)
           </p>
         </div>
       </div>
