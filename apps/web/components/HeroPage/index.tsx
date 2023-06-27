@@ -112,13 +112,17 @@ const HeroPage = () => {
               width={604}
               height={581}
             />
-
-            <Image
-              alt=""
-              src={"/assets/banner_dateandtime.webp"}
-              width={444}
-              height={581}
-            />
+            <Link
+              href="https://opensea.io/collection/acestakes-wsop-2023?fbclid=IwAR2NuOGfdamwhwd3HAvNIYEGPFNzq00E2fFcqGAj9F1Arjrubl2LWuJb3cc"
+              target="_blank"
+            >
+              <Image
+                alt=""
+                src={"/assets/banner_buynow.webp"}
+                width={444}
+                height={581}
+              />
+            </Link>
           </div>
           <span className="grow text-center text-white/50 text-[10px] leading-[12px]">
             PokerNews. (n.d.). 2023 WSOP [Online article]. Retrieved from{" "}
