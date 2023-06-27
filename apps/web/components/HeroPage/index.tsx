@@ -115,7 +115,7 @@ const HeroPage = () => {
 
             <Image
               alt=""
-              src={"/assets/banner_right.webp"}
+              src={"/assets/banner_dateandtime.webp"}
               width={444}
               height={581}
             />
