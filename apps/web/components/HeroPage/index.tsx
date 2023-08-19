@@ -2,9 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
 import { Oswald, Lato } from "next/font/google";
-import React from "react";
+import PastCollection from "components/PastCollections";
 const oswald = Oswald({ subsets: ["latin"] });
 
 const lato = Lato({
@@ -102,13 +103,13 @@ const TEAM_LOC_DATA = [
 
 const HeroPage = () => {
   return (
-    <main className="flex relative justify-center items-start py-24 bg-[url('/assets/background/background.webp')] bg-inherit md:bg-cover bg-left-top bg-fixed">
+    <main className="flex flex-col relative justify-center items-center pt-24 bg-[url('/assets/background/background.webp')] bg-inherit md:bg-cover bg-left-top bg-fixed">
       <div className="container flex flex-col max-w-[1200px] justify-start gap-4 items-center p-4 lg:gap-8 lg:px-0">
         <div className="hero-container flex flex-col">
           <div className="banner flex flex-wrap">
             <Image
               alt=""
-              src={"/assets/banner_left.webp"}
+              src={"/assets/updated-assets/banner_left.webp"}
               width={604}
               height={581}
             />
@@ -118,21 +119,12 @@ const HeroPage = () => {
             >
               <Image
                 alt=""
-                src={"/assets/banner_buynow.webp"}
+                src={"/assets/updated-assets/banner_right.webp"}
                 width={444}
                 height={581}
               />
             </Link>
           </div>
-          <span className="grow text-center text-white/50 text-[10px] leading-[12px]">
-            PokerNews. (n.d.). 2023 WSOP [Online article]. Retrieved from{" "}
-            <Link
-              href={"https://www.pokernews.com/tours/wsop/2023-wsop/"}
-              className="underline"
-            >
-              https://www.pokernews.com/tours/wsop/2023-wsop/
-            </Link>
-          </span>
         </div>
         <div className="team-container flex flex-col grow gap-2 lg:gap-4 lg:max-w-[1048px]">
           <div className="title flex">
@@ -239,6 +231,7 @@ const HeroPage = () => {
           </div>
         </div>
       </div>
+      <PastCollection />
     </main>
   );
 };

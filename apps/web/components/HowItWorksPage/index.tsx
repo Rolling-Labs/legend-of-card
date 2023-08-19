@@ -1,6 +1,6 @@
 import React from "react";
-import { Oswald, Lato } from "next/font/google";
 import Image from "next/image";
+import { Oswald, Lato } from "next/font/google";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -176,6 +176,13 @@ const HowItWorksPage = () => {
             <br></br>
             (There is a small admin fee charged by external service provider)
           </p>
+          <div className="flex justify-center items-center grow mt-5">
+            <button
+              className={`${oswald.className} text-5xl bg-[#A939FF] border border-[#707070] py-[1.5rem] px-[3rem] text-white hover:opacity-50 duration-300 uppercase font-semibold`}
+            >
+              View Collections
+            </button>
+          </div>
         </div>
       </div>
     </section>

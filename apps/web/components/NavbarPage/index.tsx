@@ -19,6 +19,10 @@ const NavbarPage = () => {
       name: "How it works",
       linkUrl: "/how-it-works",
     },
+    {
+      name: "Collections",
+      linkUrl: "/collections",
+    },
   ];
 
   const [openSide, setOpenSide] = useState(false);
