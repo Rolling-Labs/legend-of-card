@@ -92,7 +92,12 @@ const CollectionsSection = () => {
             10.
           </p>
         </div>
-        <OtherCollectionsSection />
+        <OtherCollectionsSection
+          imgUrl={"/assets/banner_left.webp"}
+          title={"2023 WSOP"}
+          subTitle={"Past Collection"}
+          subTitleColor={"text-[#A939FF]"}
+        />
       </div>
     </section>
   );
