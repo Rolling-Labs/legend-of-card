@@ -27,7 +27,15 @@ const CollectionsSection = () => {
             The APT Korea event presents an exclusive opportunity for Acestakes
             NFT holders to possess ownership of Team LoC tournament shares,
             encompassing both the Main Event (Event 24) and the High Roller
-            (Event 64). For comprehensive information, please click here.
+            (Event 64). For comprehensive information, please{" "}
+            <span>
+              <a
+                href="https://www.theasianpokertour.com/series/apt-incheon-south-korea-2023/events"
+                className="underline underline-offset-2"
+              >
+                click here.
+              </a>
+            </span>
           </p>
         </div>
         <div className="flex justify-center items-center bg-[#a939ff] py-4 lg:py-16 w-full">

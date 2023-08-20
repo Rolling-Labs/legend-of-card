@@ -73,21 +73,30 @@ const NavbarPage = () => {
               <DropdownTrigger>
                 <Button
                   variant="solid"
-                  className={`${oswald.className} bg-[#a939ff] py-2 px-3 text-white uppercase`}
+                  className={`${oswald.className}   py-2 px-3 text-white uppercase`}
                 >
-                  Collections
+                  <p
+                    className={`${
+                      pathname === "/collections-1" ||
+                      pathname === "/collections-2"
+                        ? "underline underline-offset-2"
+                        : ""
+                    }`}
+                  >
+                    Collections
+                  </p>
                 </Button>
               </DropdownTrigger>
               <DropdownMenu
                 aria-label="Example with disabled actions"
                 disabledKeys={["edit", "delete"]}
-                className={`${oswald.className} bg-[#a939ff] py-2 px-3 text-white uppercase`}
+                className={`${oswald.className}  bg-[#a939ff] py-2 px-3 text-white uppercase`}
               >
                 <DropdownItem
                   key="collections-1"
                   onClick={() => router.push(`/${"collections-1"}`)}
                 >
-                  Asian Poker
+                  APT Incheon
                 </DropdownItem>
                 <DropdownItem
                   onClick={() => router.push(`/${"collections-2"}`)}

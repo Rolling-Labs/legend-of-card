@@ -126,6 +126,20 @@ const HeroPage = () => {
             </Link>
           </div>
         </div>
+
+        <div className="flex flex-col justify-center items-center gap-4 py-[3rem]">
+          <span
+            className={`${oswald.className} text-white grow text-center text-5xl font-semibold`}
+          >
+            NFT UTILITIES
+          </span>
+          <Image
+            alt=""
+            src={"/assets/updated-assets/utilities.png"}
+            width={444}
+            height={581}
+          />
+        </div>
         <div className="team-container flex flex-col grow gap-2 lg:gap-4 lg:max-w-[1048px]">
           <div className="title flex">
             <span
