@@ -113,17 +113,17 @@ const HeroPage = () => {
               width={604}
               height={581}
             />
-            <Link
+            {/* <Link
               href="https://opensea.io/collection/acestakes-wsop-2023?fbclid=IwAR2NuOGfdamwhwd3HAvNIYEGPFNzq00E2fFcqGAj9F1Arjrubl2LWuJb3cc"
               target="_blank"
-            >
-              <Image
-                alt=""
-                src={"/assets/updated-assets/banner_right.webp"}
-                width={444}
-                height={581}
-              />
-            </Link>
+            > */}
+            <Image
+              alt=""
+              src={"/assets/updated-assets/banner_right.webp"}
+              width={444}
+              height={581}
+            />
+            {/* </Link> */}
           </div>
         </div>
 
