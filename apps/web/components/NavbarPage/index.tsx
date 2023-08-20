@@ -43,7 +43,7 @@ const NavbarPage = () => {
   return (
     <>
       <nav className="fixed top-0 flex justify-center items-center p-4 lg:py-4 bg-black w-full z-50">
-        <div className="flex flex-row justify-between items-center max-w-[75rem] px-[1rem] grow ">
+        <div className="flex flex-row justify-between items-center max-w-[75rem] px-[1rem] grow">
           <Link href="https://legendofcards.io/">
             <Image
               alt="header_logo"
@@ -53,7 +53,7 @@ const NavbarPage = () => {
               className="w-8 lg:w-12"
             />
           </Link>
-          <div className="hidden gap-4 items-center justify-between lg:flex flex-row ">
+          <div className="hidden gap-4 items-center justify-between lg:flex flex-row">
             {links.map((data, index) => (
               <Link
                 key={index}
@@ -73,7 +73,7 @@ const NavbarPage = () => {
               <DropdownTrigger>
                 <Button
                   variant="solid"
-                  className={`${oswald.className}   py-2 px-3 text-white uppercase`}
+                  className={`${oswald.className}  text-xl py-2 px-3 text-white uppercase`}
                 >
                   <p
                     className={`${

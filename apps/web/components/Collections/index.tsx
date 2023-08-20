@@ -30,7 +30,8 @@ const CollectionsSection = () => {
             (Event 64). For comprehensive information, please{" "}
             <span>
               <a
-                href="https://www.theasianpokertour.com/series/apt-incheon-south-korea-2023/events"
+                href="https://www.theasianpokertour.com/series/apt-incheon-south-korea-2023?fbclid=IwAR3-wfzgj2pTYoCTai22DGAkRMlhUX51CbBqTto3O8TLhm_h3i2Leo9Ds1k"
+                target="_blank"
                 className="underline underline-offset-2"
               >
                 click here.
