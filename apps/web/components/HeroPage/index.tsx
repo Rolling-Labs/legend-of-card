@@ -29,12 +29,27 @@ const TEAM_LOC_DATA = [
   },
 
   {
+    name: "Sparrow Cheung",
+    imgUrl: "/assets/team-loc-assets/profile_sparrow.webp",
+    title: "",
+    achievement: "Champion of APPT Main Event",
+    livewinnings: "Live Tournament Winnings: 1.9M",
+    className: "p-11 lg:mt-16",
+
+    henbobUrl: "https://pokerdb.thehendonmob.com/player.php?a=r&n=167390",
+    youtubeUrl: "",
+    wsopUrl: "",
+    somuchpokerUrl: "https://somuchpoker.com/player/park-yu-sparrow-cheung/",
+    pokernewsUrl: "",
+  },
+
+  {
     name: "Vincent Li",
     imgUrl: "/assets/team-loc-assets/profile_vincent.webp",
     title: "Co-Founder of LoC",
     achievement: "Champion Of Wynn Summer Classic Main Event",
     livewinnings: "Live Tournament Winnings: 1M",
-    className: "p-11 lg:mt-16",
+    classname: "row-start-2 p-2 lg:-mt-14",
     henbobUrl: "https://pokerdb.thehendonmob.com/player.php?a=r&n=274313",
     youtubeUrl: "",
     wsopUrl: "",
@@ -44,30 +59,18 @@ const TEAM_LOC_DATA = [
   },
 
   {
-    name: "Sparrow Cheung",
-    imgUrl: "/assets/team-loc-assets/profile_sparrow.webp",
-    title: "",
-    achievement: "Champion of APPT Main Event",
-    livewinnings: "Live Tournament Winnings: 1.9M",
-    classname: "row-start-2 p-2 lg:-mt-14",
-    henbobUrl: "https://pokerdb.thehendonmob.com/player.php?a=r&n=167390",
-    youtubeUrl: "",
-    wsopUrl: "",
-    somuchpokerUrl: "https://somuchpoker.com/player/park-yu-sparrow-cheung/",
-    pokernewsUrl: "",
-  },
-
-  {
-    name: "Soojo Kim",
-    imgUrl: "/assets/team-loc-assets/profile_soojo.webp",
-    title: "Korean Top Poker Pro",
-    achievement: "Champion of APT Main Event",
-    livewinnings: "Live Tournament Winnings: 1.77M",
+    name: "Alan Lau",
+    imgUrl: "/assets/team-loc-assets/profile_alan.webp",
+    title: "PorkerStars Red Dragon &",
+    subTitle: "ACOP Main Event Double Crown",
+    achievement: "PokerStars Asian Player of the Year (APOY)",
+    livewinnings: "Live Tournament Winnings: 2M",
     classname: "row-start-2 p-2 lg:mt-14",
-    henbobUrl: "https://pokerdb.thehendonmob.com/player.php?a=r&n=322118",
+    henbobUrl: "https://pokerdb.thehendonmob.com/player.php?a=r&n=374429",
     youtubeUrl: "",
     wsopUrl: "",
-    somuchpokerUrl: "https://somuchpoker.com/player/sj-kim/",
+    somuchpokerUrl:
+      "https://somuchpoker.com/mpc-26-alan-lau-wins-the-red-dragon-for-hk32m/",
     pokernewsUrl: "",
   },
 
@@ -83,20 +86,6 @@ const TEAM_LOC_DATA = [
     wsopUrl: "",
     somuchpokerUrl:
       "https://somuchpoker.com/wpt-prime-taiwan-hon-cheong-ivan-lee-ships-super-high-roller-im-heesoo-wins-single-day-hr/",
-    pokernewsUrl: "",
-  },
-
-  {
-    name: "Nevan Chang",
-    imgUrl: "/assets/team-loc-assets/profile_nevan.webp",
-    title: "Taiwanese Top Youtube Influencer",
-    achievement: "Champion of APT Highroller",
-    livewinnings: "Live Tournament Winnings: 686K",
-    classname: "row-start-3 p-2 lg:mt-14",
-    henbobUrl: "https://pokerdb.thehendonmob.com/player.php?a=r&n=525488",
-    youtubeUrl: "https://www.youtube.com/@WiNPokerCouple",
-    wsopUrl: "",
-    somuchpokerUrl: "",
     pokernewsUrl: "",
   },
 ];
@@ -140,7 +129,7 @@ const HeroPage = () => {
             height={581}
           />
         </div>
-        <div className="team-container flex flex-col grow gap-2 lg:gap-4 lg:max-w-[1048px]">
+        <div className="team-container flex flex-col grow gap-2 lg:gap-4 lg:max-w-[1200px]">
           <div className="title flex">
             <span
               className={`${oswald.className} text-white grow text-center text-5xl font-semibold`}
@@ -152,7 +141,7 @@ const HeroPage = () => {
             {TEAM_LOC_DATA.map((data, index) => {
               return (
                 <div key={index} className={`${data.classname} w-full`}>
-                  <div className="h-full w-full flex flex-col md:flex-row justify-center items-center md:justify-start p-5 gap-5 md:items-center md:max-w-[500px] md:min-h-[250px] bg-gradient-to-b md:bg-gradient-to-r from-[#6b27a0]/95 from-30% to-60% to-[#0d0c0e]/40 rounded-xl">
+                  <div className="h-full w-full flex flex-col md:flex-row justify-center items-center md:justify-start p-5 gap-5 md:items-center md:max-w-[600px] md:min-h-[250px] bg-gradient-to-b md:bg-gradient-to-r from-[#6b27a0]/95 from-30% to-60% to-[#0d0c0e]/40 rounded-xl">
                     <Image
                       alt={data.name}
                       src={data.imgUrl}
@@ -225,6 +214,11 @@ const HeroPage = () => {
                           className={`${lato.className} text-white font-normal text-md`}
                         >
                           {data.title}
+                        </p>
+                        <p
+                          className={`${lato.className} text-white font-normal text-md`}
+                        >
+                          {data.subTitle}
                         </p>
                         <p
                           className={`${lato.className} text-white font-normal text-md`}

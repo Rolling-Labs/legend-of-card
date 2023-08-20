@@ -82,11 +82,7 @@ const CollectionsSection = () => {
             through an airdrop, along with the winnings.
             <br></br>
             <br></br>◆ Funding will be allocated in the best interests of Team
-            LoC and its backers. *If a player loses all their chips or falls
-            below a certain chip count, they can choose to rebuy by paying the
-            buy-in fee again. This gives them a new stack of chips and a fresh
-            chance to continue playing. **Re-entry into the tournament is
-            available until the end of level 10.
+            LoC and its backers.
           </p>
         </div>
         <div className="flex flex-col px-4 lg:px-24">

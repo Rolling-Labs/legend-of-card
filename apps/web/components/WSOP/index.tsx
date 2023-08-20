@@ -63,7 +63,7 @@ const TEAM_LOC_DATA = [
     imgUrl: "/assets/team-loc-assets/profile_soojo.webp",
     title: "Korean Top Poker Pro",
     achievement: "Champion of APT Main Event",
-    livewinnings: "Live Tournament Winnings: 1.77M",
+    livewinnings: "Live Tournament Winnings: 1.6M",
     classname: "row-start-2 p-2 lg:mt-14",
     henbobUrl: "https://pokerdb.thehendonmob.com/player.php?a=r&n=322118",
     youtubeUrl: "",
@@ -104,7 +104,7 @@ const TEAM_LOC_DATA = [
 const WSOPSection = () => {
   return (
     <main className="flex flex-col relative justify-center items-center pt-24 bg-[url('/assets/background/background.webp')] bg-inherit md:bg-cover bg-left-top bg-fixed">
-      <div className="flex flex-col max-w-[1200px] justify-start gap-4 items-center py-8 lg:gap-8 lg:px-0 bg-black/40 backdrop-blur-sm">
+      <div className="flex flex-col max-w-[1300px] justify-start gap-4 items-center py-8 lg:gap-8 lg:px-0 bg-black/40 backdrop-blur-sm">
         <span
           className={`${oswald.className} text-white grow text-center font-semibold`}
         >
@@ -136,7 +136,7 @@ const WSOPSection = () => {
             https://www.pokernews.com/tours/wsop/2023-wsop/
           </Link>
         </span>
-        <div className="team-container flex flex-col grow gap-2 lg:gap-4 lg:max-w-[1048px]">
+        <div className="team-container flex flex-col grow gap-2 lg:gap-4 lg:max-w-[1300px]">
           <div className="title flex">
             <span
               className={`${oswald.className} text-white grow text-center text-5xl font-semibold`}
@@ -148,7 +148,7 @@ const WSOPSection = () => {
             {TEAM_LOC_DATA.map((data, index) => {
               return (
                 <div key={index} className={`${data.classname} w-full`}>
-                  <div className="h-full w-full flex flex-col md:flex-row justify-center items-center md:justify-start p-5 gap-5 md:items-center md:max-w-[500px] md:min-h-[250px] bg-gradient-to-b md:bg-gradient-to-r from-[#6b27a0]/95 from-30% to-60% to-[#0d0c0e]/40 rounded-xl">
+                  <div className="h-full w-full flex flex-col md:flex-row justify-center items-center md:justify-start p-5 gap-5 md:items-center md:max-w-[600px] md:min-h-[250px] bg-gradient-to-b md:bg-gradient-to-r from-[#6b27a0]/95 from-30% to-60% to-[#0d0c0e]/40 rounded-xl">
                     <Image
                       alt={data.name}
                       src={data.imgUrl}

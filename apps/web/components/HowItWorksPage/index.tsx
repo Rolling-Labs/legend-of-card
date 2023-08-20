@@ -182,7 +182,7 @@ const HowItWorksPage = () => {
           <div className="flex justify-center items-center grow mt-5">
             <button
               onClick={() => router.push("/collections-1")}
-              className={`${oswald.className} text-sm md:text-2xl lg:text-5xl bg-[#A939FF] border border-[#707070] p-4 lg:py-[1.5rem] p-4 lg:px-[3rem] text-white hover:opacity-50 duration-300 uppercase font-semibold`}
+              className={`${oswald.className} text-sm md:text-2xl lg:text-5xl bg-[#A939FF] border border-[#707070] p-4 lg:py-[1.5rem] lg:px-[3rem] text-white hover:opacity-50 duration-300 uppercase font-semibold`}
             >
               View Collections
             </button>
