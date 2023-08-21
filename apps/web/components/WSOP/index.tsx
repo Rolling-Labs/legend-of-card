@@ -282,7 +282,7 @@ const WSOPSection = () => {
           </p>
         </div>
         <OtherCollectionsSection
-          imgUrl={"/assets/updated-assets/banner_left.webp"}
+          imgUrl={"/assets/updated-assets/banner_left.jpg"}
           title={"APT Incheon Main Event + High Roller"}
           subTitle={"Current Collection"}
           subTitleColor={"text-[#4BD282]"}

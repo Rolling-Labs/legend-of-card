@@ -106,13 +106,13 @@ const CollectionsSection = () => {
           <div className="banner flex flex-wrap">
             <Image
               alt=""
-              src={"/assets/updated-assets/banner_left.webp"}
+              src={"/assets/updated-assets/banner_left.jpg"}
               width={604}
               height={581}
             />
             <Image
               alt=""
-              src={"/assets/updated-assets/banner_right_date_02.webp"}
+              src={"/assets/updated-assets/banner_right.jpg"}
               width={444}
               height={581}
             />
