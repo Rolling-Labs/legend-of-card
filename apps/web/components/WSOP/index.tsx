@@ -104,7 +104,7 @@ const TEAM_LOC_DATA = [
 const WSOPSection = () => {
   return (
     <main className="flex flex-col relative justify-center items-center pt-24 bg-[url('/assets/background/background.webp')] bg-inherit md:bg-cover bg-left-top bg-fixed">
-      <div className="flex flex-col max-w-[1300px] justify-start gap-4 items-center py-8 lg:gap-8 lg:px-0 bg-black/40 backdrop-blur-sm">
+      <div className="flex flex-col max-w-[1300px] justify-start gap-4 items-center py-8 lg:gap-8 px-[1rem] lg:px-0 bg-black/40 backdrop-blur-sm">
         <span
           className={`${oswald.className} text-white grow text-center font-semibold`}
         >
