@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
-import { Oswald, Lato } from "next/font/google";
 import Image from "next/image";
+import { Oswald, Lato } from "next/font/google";
+import { useRouter } from "next/navigation";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -9,6 +11,7 @@ const lato = Lato({
 const oswald = Oswald({ subsets: ["latin"] });
 
 const HowItWorksPage = () => {
+  const router = useRouter();
   return (
     <section className="flex relative justify-center items-start pt-32 bg-[url('/assets/background/background.webp')] bg-inherit md:bg-cover bg-left-top bg-fixed">
       {/* <div className="absolute bottom-0 h-[190vh] bg-black w-full "></div> */}
@@ -176,6 +179,14 @@ const HowItWorksPage = () => {
             <br></br>
             (There is a small admin fee charged by external service provider)
           </p>
+          <div className="flex justify-center items-center grow mt-5">
+            <button
+              onClick={() => router.push("/collections-1")}
+              className={`${oswald.className} text-sm md:text-2xl lg:text-5xl bg-[#A939FF] border border-[#707070] p-4 lg:py-[1.5rem] lg:px-[3rem] text-white hover:opacity-50 duration-300 uppercase font-semibold`}
+            >
+              View Collections
+            </button>
+          </div>
         </div>
       </div>
     </section>
