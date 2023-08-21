@@ -164,7 +164,7 @@ const NavbarPage = () => {
                   className="w-full"
                   onClick={() => handleClick("collections-1")}
                 >
-                  Asian Poker
+                  APT Incheon
                 </DropdownItem>
                 <DropdownItem
                   onClick={() => handleClick("collections-2")}

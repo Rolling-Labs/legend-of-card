@@ -126,14 +126,12 @@ const HeroPage = () => {
       <div className="container flex flex-col max-w-[1200px] justify-start gap-4 items-center p-4 lg:gap-8 lg:px-0">
         <div className="hero-container flex flex-col">
           <div className="banner flex flex-wrap">
-            <Link href="/collections-1" target="_blank">
-              <Image
-                alt=""
-                src={"/assets/updated-assets/banner_left.webp"}
-                width={604}
-                height={581}
-              />
-            </Link>
+            <Image
+              alt=""
+              src={"/assets/updated-assets/banner_left.webp"}
+              width={604}
+              height={581}
+            />
             <Image
               alt=""
               src={"/assets/updated-assets/banner_right_date_02.webp"}

@@ -13,6 +13,7 @@ interface IOtherCollection {
   title: string;
   subTitle: string;
   subTitleColor: string;
+  href: string;
 }
 
 const OtherCollectionsSection = ({
@@ -20,6 +21,7 @@ const OtherCollectionsSection = ({
   title,
   subTitle,
   subTitleColor,
+  href,
 }: IOtherCollection) => {
   return (
     <div className="flex justify-center items-center h-auto py-[2rem] w-full">
@@ -31,7 +33,7 @@ const OtherCollectionsSection = ({
         </span>
         <div className="flex flex-wrap justify-between px-8 w-full gap-2">
           <div className="flex flex-col items-center justify-center gap-4">
-            <Link href="/collections-2">
+            <Link href={href}>
               <Image alt={title} src={imgUrl} width={500} height={500} />
             </Link>
             <div className="flex flex-col justify-center items-center">

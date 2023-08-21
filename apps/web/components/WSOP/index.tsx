@@ -286,6 +286,7 @@ const WSOPSection = () => {
           title={"APT Incheon Main Event + High Roller"}
           subTitle={"Current Collection"}
           subTitleColor={"text-[#4BD282]"}
+          href="/collections-1"
         />
       </div>
     </main>

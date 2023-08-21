@@ -291,6 +291,7 @@ const CollectionsSection = () => {
           title={"2023 WSOP"}
           subTitle={"Past Collection"}
           subTitleColor={"text-[#A939FF]"}
+          href={"/collections-2"}
         />
       </div>
     </section>
