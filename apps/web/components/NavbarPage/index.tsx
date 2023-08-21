@@ -136,7 +136,7 @@ const NavbarPage = () => {
                 key={index}
                 href={data.linkUrl}
                 onClick={() => setOpenSide(!openSide)}
-                className={`text-white capitalize py-2 text-2xl ${
+                className={`text-white py-2 text-2xl uppercase ${
                   oswald.className
                 } ${
                   pathname === data.linkUrl
@@ -151,17 +151,27 @@ const NavbarPage = () => {
               <DropdownTrigger>
                 <Button
                   variant="solid"
-                  className={`${oswald.className} bg-[#a939ff] py-2 px-3 text-white uppercase w-full`}
+                  className={`${oswald.className} text-left text-2xl py-2 text-white uppercase`}
                 >
-                  Collections
+                  <p
+                    className={`${
+                      pathname === "/collections-1" ||
+                      pathname === "/collections-2"
+                        ? "underline underline-offset-2"
+                        : ""
+                    }`}
+                  >
+                    Collections
+                  </p>
                 </Button>
               </DropdownTrigger>
               <DropdownMenu
-                className={`${oswald.className} bg-[#a939ff] py-2 px-3 text-white uppercase w-full`}
+                aria-label="Example with disabled actions"
+                disabledKeys={["edit", "delete"]}
+                className={`${oswald.className}  bg-[#a939ff] py-2 px-3 text-white uppercase`}
               >
                 <DropdownItem
                   key="collections-1"
-                  className="w-full"
                   onClick={() => handleClick("collections-1")}
                 >
                   APT Incheon
@@ -169,7 +179,6 @@ const NavbarPage = () => {
                 <DropdownItem
                   onClick={() => handleClick("collections-2")}
                   key="collections-2"
-                  className="w-full"
                 >
                   WSOP 2023
                 </DropdownItem>
