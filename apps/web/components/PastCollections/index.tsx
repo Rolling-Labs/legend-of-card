@@ -8,27 +8,29 @@ const PastCollection = () => {
   return (
     <div className="flex justify-center items-center h-auto py-[2rem] bg-[#67239b]/50 w-full">
       <div className="flex flex-col justify-center items-center max-w-[1200px] gap-4">
-        <span
+        {/* <span
           className={`${oswald.className} text-white grow text-center text-5xl font-semibold`}
         >
           Past Collections
-        </span>
-        <div className="banner flex flex-wrap">
-          <Image
-            alt=""
-            src={"/assets/banner_left.webp"}
-            width={604}
-            height={581}
-          />
+        </span> */}
+        <Link href="/collections-2">
+          <div className="banner flex flex-wrap mt-[3rem]">
+            <Image
+              alt=""
+              src={"/assets/banner_left.webp"}
+              width={604}
+              height={581}
+            />
 
-          <Image
-            alt=""
-            src={"/assets/banner_right.webp"}
-            width={444}
-            height={581}
-          />
-        </div>
-        <span className="grow text-center text-white/50 text-[10px] leading-[12px]">
+            <Image
+              alt=""
+              src={"/assets/updated-assets/banner_dateandtime.webp"}
+              width={444}
+              height={581}
+            />
+          </div>
+        </Link>
+        {/* <span className="grow text-center text-white/50 text-[10px] leading-[12px]">
           PokerNews. (n.d.). 2023 WSOP [Online article]. Retrieved from{" "}
           <Link
             href={"https://www.pokernews.com/tours/wsop/2023-wsop/"}
@@ -36,7 +38,7 @@ const PastCollection = () => {
           >
             https://www.pokernews.com/tours/wsop/2023-wsop/
           </Link>
-        </span>
+        </span> */}
       </div>
     </div>
   );

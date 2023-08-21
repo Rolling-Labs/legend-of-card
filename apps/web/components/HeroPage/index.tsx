@@ -6,6 +6,7 @@ import React from "react";
 
 import { Oswald, Lato } from "next/font/google";
 import PastCollection from "components/PastCollections";
+import NFTSection from "components/NFTUtil";
 const oswald = Oswald({ subsets: ["latin"] });
 
 const lato = Lato({
@@ -88,6 +89,35 @@ const TEAM_LOC_DATA = [
       "https://somuchpoker.com/wpt-prime-taiwan-hon-cheong-ivan-lee-ships-super-high-roller-im-heesoo-wins-single-day-hr/",
     pokernewsUrl: "",
   },
+
+  {
+    name: "Nevan Chang",
+    imgUrl: "/assets/team-loc-assets/profile_nevan.webp",
+    title: "Taiwanese Top Youtube Influencer",
+    achievement: "Champion of APT Highroller",
+    livewinnings: "Live Tournament Winnings: 686K",
+    // classname: "row-start-2 p-2 lg:mt-14",
+
+    henbobUrl: "https://pokerdb.thehendonmob.com/player.php?a=r&n=525488",
+    youtubeUrl: "https://www.youtube.com/@WiNPokerCouple",
+    wsopUrl: "",
+    somuchpokerUrl: "",
+    pokernewsUrl: "",
+  },
+
+  {
+    name: "Soojo Kim",
+    imgUrl: "/assets/team-loc-assets/profile_soojo.webp",
+    title: "Korean Top Poker Pro",
+    achievement: "Champion of APT Main Event",
+    livewinnings: "Live Tournament Winnings: 1.6M",
+    classname: "row-start-3 p-2 lg:mt-14",
+    henbobUrl: "https://pokerdb.thehendonmob.com/player.php?a=r&n=322118",
+    youtubeUrl: "",
+    wsopUrl: "",
+    somuchpokerUrl: "https://somuchpoker.com/player/sj-kim/",
+    pokernewsUrl: "",
+  },
 ];
 
 const HeroPage = () => {
@@ -96,39 +126,25 @@ const HeroPage = () => {
       <div className="container flex flex-col max-w-[1200px] justify-start gap-4 items-center p-4 lg:gap-8 lg:px-0">
         <div className="hero-container flex flex-col">
           <div className="banner flex flex-wrap">
+            <Link href="/collections-1" target="_blank">
+              <Image
+                alt=""
+                src={"/assets/updated-assets/banner_left.webp"}
+                width={604}
+                height={581}
+              />
+            </Link>
             <Image
               alt=""
-              src={"/assets/updated-assets/banner_left.webp"}
-              width={604}
-              height={581}
-            />
-            {/* <Link
-              href="https://opensea.io/collection/acestakes-wsop-2023?fbclid=IwAR2NuOGfdamwhwd3HAvNIYEGPFNzq00E2fFcqGAj9F1Arjrubl2LWuJb3cc"
-              target="_blank"
-            > */}
-            <Image
-              alt=""
-              src={"/assets/updated-assets/banner_right.webp"}
+              src={"/assets/updated-assets/banner_right_date_02.webp"}
               width={444}
               height={581}
             />
-            {/* </Link> */}
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center gap-4 py-[3rem]">
-          <span
-            className={`${oswald.className} text-white grow text-center text-5xl font-semibold`}
-          >
-            NFT UTILITIES
-          </span>
-          <Image
-            alt=""
-            src={"/assets/updated-assets/utilities.png"}
-            width={444}
-            height={581}
-          />
-        </div>
+        <NFTSection />
+
         <div className="team-container flex flex-col grow gap-2 lg:gap-4 lg:max-w-[1200px]">
           <div className="title flex">
             <span
@@ -137,7 +153,7 @@ const HeroPage = () => {
               TEAM LOC
             </span>
           </div>
-          <div className="cards-container flex flex-col lg:grid grid-cols-2 grid-rows-3 place-items-center gap-x-4 gap-y-0 text-white">
+          <div className="cards-container flex flex-col lg:grid grid-cols-2 grid-rows-3 place-items-center gap-x-4 gap-y-0 text-white pb-[4rem]">
             {TEAM_LOC_DATA.map((data, index) => {
               return (
                 <div key={index} className={`${data.classname} w-full`}>

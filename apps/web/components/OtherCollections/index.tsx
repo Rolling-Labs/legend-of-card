@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Oswald, Lato } from "next/font/google";
+import Link from "next/link";
 const oswald = Oswald({ subsets: ["latin"] });
 const lato = Lato({
   subsets: ["latin"],
@@ -30,7 +31,9 @@ const OtherCollectionsSection = ({
         </span>
         <div className="flex flex-wrap justify-between px-8 w-full gap-2">
           <div className="flex flex-col items-center justify-center gap-4">
-            <Image alt={title} src={imgUrl} width={500} height={500} />
+            <Link href="/collections-2">
+              <Image alt={title} src={imgUrl} width={500} height={500} />
+            </Link>
             <div className="flex flex-col justify-center items-center">
               <h1
                 className={`${oswald.className} text-2xl text-white uppercase font-semibold`}

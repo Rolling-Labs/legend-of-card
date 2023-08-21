@@ -32,6 +32,11 @@ const NavbarPage = () => {
 
   const [openSide, setOpenSide] = useState(false);
 
+  function handleClick(routes: any) {
+    router.push(`/${routes}`);
+    setOpenSide(false);
+  }
+
   useEffect(() => {
     {
       openSide
@@ -58,7 +63,7 @@ const NavbarPage = () => {
               <Link
                 key={index}
                 href={data.linkUrl}
-                className={`text-white capitalize px-4 py-2 text-xl ${
+                className={`text-white uppercase px-4 py-2 text-xl  ${
                   oswald.className
                 } ${
                   pathname === data.linkUrl
@@ -94,12 +99,12 @@ const NavbarPage = () => {
               >
                 <DropdownItem
                   key="collections-1"
-                  onClick={() => router.push(`/${"collections-1"}`)}
+                  onClick={() => handleClick("collections-1")}
                 >
                   APT Incheon
                 </DropdownItem>
                 <DropdownItem
-                  onClick={() => router.push(`/${"collections-2"}`)}
+                  onClick={() => handleClick("collections-2")}
                   key="collections-2"
                 >
                   WSOP 2023
@@ -157,12 +162,12 @@ const NavbarPage = () => {
                 <DropdownItem
                   key="collections-1"
                   className="w-full"
-                  onClick={() => router.push(`/${"collections-1"}`)}
+                  onClick={() => handleClick("collections-1")}
                 >
                   Asian Poker
                 </DropdownItem>
                 <DropdownItem
-                  onClick={() => router.push(`/${"collections-2"}`)}
+                  onClick={() => handleClick("collections-2")}
                   key="collections-2"
                   className="w-full"
                 >
@@ -172,72 +177,6 @@ const NavbarPage = () => {
             </Dropdown>
           </div>
         </div>
-        {/* <div className="wrapper max-w-[800px] flex grow justify-between">
-        <div className="title-wrapper p-2 flex justify-center items-center">
-          <Link href="https://legendofcards.io/">
-            <Image
-              alt="header_logo"
-              src={"/assets/logo/header_logo.webp"}
-              height={98}
-              width={98}
-              className="h-8 w-auto lg:h-12"
-            />
-          </Link>
-        </div>
-        <div className="buttons-wrapper flex justify-center items-center">
-          <div
-            className="mobile-nav p-2 lg:hidden"
-            onClick={() => setOpenSide(!openSide)}
-          >
-            <Image
-              alt="bars"
-              src={"/assets/icons/bars.svg"}
-              height={98}
-              width={98}
-              className="h-6 w-auto"
-            />
-          </div>
-          <div className="hidden gap-4 w-full bg-white items-center justify-center lg:flex">
-            {links.map((data, index) => (
-              <Link
-                key={index}
-                href={data.linkUrl}
-                className={`text-white capitalize px-4 py-2 text-xl ${
-                  oswald.className
-                } ${
-                  router === data.linkUrl ? "underline underline-offset-2" : ""
-                } `}
-              >
-                {data.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-        <div
-          className={
-            openSide
-              ? "fixed right-0 h-screen w-screen -z-[1] bg-black/50 backdrop-blur-sm flex justify-end"
-              : "hidden"
-          }
-        >
-          <div className="flex flex-col justify-center items-center self-stretch w-[70dvw] max-w-[350px] bg-black p-8">
-            {links.map((data, index) => (
-              <Link
-                key={index}
-                href={data.linkUrl}
-                onClick={() => setOpenSide(!openSide)}
-                className={`text-white capitalize self-stretch px-4 py-2 text-2xl ${
-                  oswald.className
-                } ${
-                  router === data.linkUrl ? "underline underline-offset-4" : ""
-                } ${data.linkUrl === "/connect" ? "bg-white/10 mt-8" : ""}`}
-              >
-                {data.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div> */}
       </nav>
     </>
   );
