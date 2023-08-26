@@ -95,7 +95,7 @@ const NavbarPage = () => {
               <DropdownMenu
                 aria-label="Example with disabled actions"
                 disabledKeys={["edit", "delete"]}
-                className={`${oswald.className}  bg-[#a939ff] py-2 px-3 text-white uppercase`}
+                className={`${oswald.className}  bg-black py-2 px-3 text-white uppercase`}
               >
                 <DropdownItem
                   key="collections-1"
@@ -168,7 +168,7 @@ const NavbarPage = () => {
               <DropdownMenu
                 aria-label="Example with disabled actions"
                 disabledKeys={["edit", "delete"]}
-                className={`${oswald.className}  bg-[#a939ff] py-2 px-3 text-white uppercase`}
+                className={`${oswald.className}  bg-black py-2 px-3 text-white uppercase`}
               >
                 <DropdownItem
                   key="collections-1"
