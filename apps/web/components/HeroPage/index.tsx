@@ -128,27 +128,22 @@ const HeroPage = () => {
       <div className="container flex flex-col max-w-[1200px] justify-start gap-4 items-center p-4 lg:gap-8 lg:px-0">
         <div className="hero-container flex flex-col">
           <div className="relative banner flex flex-wrap items-center justify-center">
-            <div className="relative w-full h-full max-w-[604px]">
-              <Image
-                alt=""
-                src={"/assets/updated-assets/banner_left.jpg"}
-                width={604}
-                height={581}
-              />
-              <Button
-                disabled
-                className={`absolute bottom-0 left-1/2 transform  -translate-x-1/2    text-white ${oswald.className} bg-[#F2F2F2]/50 cursor-not-allowed font-bold text-base uppercase w-full max-w-[500px] py-2 lg:py-5 px-3`}
-              >
-                Buy Now
-              </Button>
-            </div>
-
             <Image
               alt=""
-              src={"/assets/updated-assets/banner_right.jpg"}
-              width={444}
+              src={"/assets/updated-assets/banner_left.jpg"}
+              width={604}
               height={581}
             />
+
+            {/* update this link */}
+            <Link aria-disabled href={""} className="cursor-not-allowed">
+              <Image
+                alt=""
+                src={"/assets/updated-assets/banner_right_pending_02.jpg"}
+                width={444}
+                height={581}
+              />
+            </Link>
           </div>
         </div>
 
