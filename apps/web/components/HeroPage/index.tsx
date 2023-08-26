@@ -7,6 +7,8 @@ import React from "react";
 import { Oswald, Lato } from "next/font/google";
 import PastCollection from "components/PastCollections";
 import NFTSection from "components/NFTUtil";
+import { Button } from "@nextui-org/react";
+
 const oswald = Oswald({ subsets: ["latin"] });
 
 const lato = Lato({
@@ -125,19 +127,23 @@ const HeroPage = () => {
     <main className="flex flex-col relative justify-center items-center pt-24 bg-[url('/assets/background/background.webp')] bg-inherit md:bg-cover bg-left-top bg-fixed">
       <div className="container flex flex-col max-w-[1200px] justify-start gap-4 items-center p-4 lg:gap-8 lg:px-0">
         <div className="hero-container flex flex-col">
-          <div className="banner flex flex-wrap">
+          <div className="relative banner flex flex-wrap items-center justify-center">
             <Image
               alt=""
               src={"/assets/updated-assets/banner_left.jpg"}
               width={604}
               height={581}
             />
-            <Image
-              alt=""
-              src={"/assets/updated-assets/banner_right.jpg"}
-              width={444}
-              height={581}
-            />
+
+            {/* update this link */}
+            <Link aria-disabled href={""} className="cursor-not-allowed">
+              <Image
+                alt=""
+                src={"/assets/updated-assets/banner_right_pending_02.jpg"}
+                width={444}
+                height={581}
+              />
+            </Link>
           </div>
         </div>
 
