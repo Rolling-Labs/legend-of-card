@@ -7,6 +7,8 @@ import React from "react";
 import { Oswald, Lato } from "next/font/google";
 import PastCollection from "components/PastCollections";
 import NFTSection from "components/NFTUtil";
+import { Button } from "@nextui-org/react";
+
 const oswald = Oswald({ subsets: ["latin"] });
 
 const lato = Lato({
@@ -125,13 +127,22 @@ const HeroPage = () => {
     <main className="flex flex-col relative justify-center items-center pt-24 bg-[url('/assets/background/background.webp')] bg-inherit md:bg-cover bg-left-top bg-fixed">
       <div className="container flex flex-col max-w-[1200px] justify-start gap-4 items-center p-4 lg:gap-8 lg:px-0">
         <div className="hero-container flex flex-col">
-          <div className="banner flex flex-wrap">
-            <Image
-              alt=""
-              src={"/assets/updated-assets/banner_left.jpg"}
-              width={604}
-              height={581}
-            />
+          <div className="relative banner flex flex-wrap items-center justify-center">
+            <div className="relative w-full h-full max-w-[604px]">
+              <Image
+                alt=""
+                src={"/assets/updated-assets/banner_left.jpg"}
+                width={604}
+                height={581}
+              />
+              <Button
+                disabled
+                className={`absolute bottom-0 left-1/2 transform  -translate-x-1/2    text-white ${oswald.className} bg-[#F2F2F2]/50 cursor-not-allowed font-bold text-base uppercase w-full max-w-[500px] py-2 lg:py-5 px-3`}
+              >
+                Buy Now
+              </Button>
+            </div>
+
             <Image
               alt=""
               src={"/assets/updated-assets/banner_right.jpg"}
