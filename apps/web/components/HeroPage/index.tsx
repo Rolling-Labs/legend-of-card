@@ -145,7 +145,8 @@ const HeroPage = () => {
             >
               <Image
                 alt=""
-                src={"/assets/updated-assets/banner_right_buynow_02.jpg"}
+                // src={"/assets/updated-assets/banner_right_buynow_02.jpg"}
+                src={"/assets/updated-assets/banner_right_pending_02.jpg"}
                 width={444}
                 height={581}
               />
