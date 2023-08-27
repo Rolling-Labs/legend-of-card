@@ -111,21 +111,13 @@ const CollectionsSection = () => {
               height={581}
             />
 
-            {/* update this link */}
-            {/* <Link href={""} className="cursor-not-allowed" aria-disabled>
-              <Image
-                alt=""
-                src={"/assets/updated-assets/banner_right_pending_02.jpg"}
-                width={444}
-                height={581}
-              />
-            </Link> */}
-            {/* update this link */}
             <Link
-              href={
-                "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/31845804452960518152450778683093737880118144641872874987667296804098879258824?fbclid=IwAR2mvRITrQmfsd1d2TnSCZVLDbGGDY87njR-1oj-f7GQijlVLBfxngJbbWg"
-              }
-              className="cursor-pointer"
+              aria-disabled
+              className="cursor-not-allowed"
+              // href={
+              //   "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/31845804452960518152450778683093737880118144641872874987667296804098879258824?fbclid=IwAR2mvRITrQmfsd1d2TnSCZVLDbGGDY87njR-1oj-f7GQijlVLBfxngJbbWg"
+              // }
+              href="#comingsoon"
             >
               <Image
                 alt=""
