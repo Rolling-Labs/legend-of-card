@@ -110,12 +110,25 @@ const CollectionsSection = () => {
               width={604}
               height={581}
             />
-            <Image
-              alt=""
-              src={"/assets/updated-assets/banner_right.jpg"}
-              width={444}
-              height={581}
-            />
+
+            {/* update this link */}
+            <Link href={""} className="cursor-not-allowed" aria-disabled>
+              <Image
+                alt=""
+                src={"/assets/updated-assets/banner_right_pending_02.jpg"}
+                width={444}
+                height={581}
+              />
+            </Link>
+            {/* update this link */}
+            {/* <Link href={""} className="cursor-pointer">
+              <Image
+                alt=""
+                src={"/assets/updated-assets/banner_right_buynow_02.jpg"}
+                width={444}
+                height={581}
+              />
+            </Link> */}
           </div>
         </div>
 
