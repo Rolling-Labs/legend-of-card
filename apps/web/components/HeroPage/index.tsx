@@ -135,25 +135,23 @@ const HeroPage = () => {
               height={581}
             />
 
-            <Link href={""} className="cursor-not-allowed" aria-disabled>
+            {/* <Link href={""} className="cursor-not-allowed" aria-disabled>
               <Image
                 alt=""
                 src={"/assets/updated-assets/banner_right_pending_02.jpg"}
                 width={444}
                 height={581}
               />
-            </Link>
+            </Link> */}
             {/* update this link */}
-            {/* <Link href={""} className="cursor-pointer">
+            <Link href={""} className="cursor-pointer">
               <Image
                 alt=""
-
                 src={"/assets/updated-assets/banner_right_buynow_02.jpg"}
-
                 width={444}
                 height={581}
               />
-            </Link> */}
+            </Link>
           </div>
         </div>
 
